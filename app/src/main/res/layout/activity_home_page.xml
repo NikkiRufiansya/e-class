@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/image2"
     tools:context=".HomePageActivity">
 
@@ -41,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/_140sdp"
         android:layout_marginTop="@dimen/_1sdp"
-        android:fontFamily="@font/poppins_medium"
+        android:fontFamily="@font/Poppins_medium"
         android:text="University"
         android:textColor="@color/white"
         android:textSize="@dimen/_16sdp" />
@@ -63,7 +64,7 @@
         android:id="@+id/body"
         android:layout_marginTop="@dimen/_160sdp"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_350sdp"
+        android:layout_height="match_parent"
         android:background="@drawable/bg_shape"
         android:orientation="vertical">
 
@@ -98,44 +99,59 @@
             android:textSize="@dimen/_12sdp"
             android:textStyle="normal" />
 
-        <RelativeLayout
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="@dimen/_5sdp"
             android:layout_marginTop="@dimen/_24sdp"
-            android:id="@+id/layoutNotification"
             android:layout_marginHorizontal="@dimen/_24sdp"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_64sdp"
-            android:background="@drawable/bg_shape_menu"
-            android:outlineSpotShadowColor="@color/black"
-            android:padding="16dp" >
+            app:cardBackgroundColor="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-            <ImageView
-                android:src="@mipmap/ic_launcher"
-                android:id="@+id/image"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="@dimen/_10sdp" />
+            <RelativeLayout
 
-            <TextView
-                android:textSize="@dimen/_12sdp"
-                android:textColor="#000"
-                android:text="pesan baru"
-                android:id="@+id/title"
-                android:layout_width="wrap_content"
+                android:id="@+id/layoutNotification"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                />
-            <TextView
-                android:textSize="@dimen/_12sdp"
-                android:textColor="#000"
-                android:text="anda mendapatkan pesan baru "
-                android:id="@+id/text"
+                android:outlineSpotShadowColor="@color/black"
+                android:padding="16dp" >
+
+                <ImageView
+                    android:src="@mipmap/ic_launcher"
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_10sdp" />
+
+                <TextView
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="#000"
+                    android:text="pesan baru"
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    />
+                <TextView
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="#000"
+                    android:text="anda mendapatkan pesan baru "
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/title"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_below="@id/title"
-                />
-        </RelativeLayout>
+                android:layout_height="wrap_content"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
 
 
 
@@ -145,44 +161,6 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/menu"
-        android:layout_below="@+id/body"
-        android:background="@drawable/bg_shape_menu"
-        android:layout_alignParentBottom="true"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
 
-        <ImageButton
-            android:layout_width="@dimen/_50sdp"
-            android:layout_height="@dimen/_50sdp"
-            android:layout_marginLeft="@dimen/_24sdp"
-            android:layout_marginTop="@dimen/_5sdp"
-            android:background="@drawable/ic_outline_home_24" />
-
-        <ImageButton
-            android:layout_width="@dimen/_50sdp"
-            android:layout_height="@dimen/_50sdp"
-            android:layout_marginLeft="@dimen/_24sdp"
-            android:layout_marginTop="@dimen/_5sdp"
-            android:background="@drawable/ic_outline_calendar_today_24" />
-
-        <ImageButton
-            android:layout_width="@dimen/_50sdp"
-            android:layout_height="@dimen/_50sdp"
-            android:layout_marginLeft="@dimen/_24sdp"
-            android:layout_marginTop="@dimen/_5sdp"
-            android:background="@drawable/ic_outline_chat_24" />
-
-        <ImageButton
-            android:layout_width="@dimen/_50sdp"
-            android:layout_height="@dimen/_50sdp"
-            android:layout_marginLeft="@dimen/_24sdp"
-            android:layout_marginTop="@dimen/_5sdp"
-            android:background="@drawable/ic_baseline_settings_24" />
-
-
-    </LinearLayout>
 
 </RelativeLayout>
