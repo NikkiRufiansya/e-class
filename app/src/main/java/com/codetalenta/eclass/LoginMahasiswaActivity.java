@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.codetalenta.eclass.R;
-
 public class LoginMahasiswaActivity extends AppCompatActivity {
 
     @Override
