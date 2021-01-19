@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image2"
+    tools:context=".HomePageActivity">
+
+    <TextView
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="@dimen/_20sdp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:text="E-Class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginLeft="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_48sdp"
+        android:src="@drawable/ic_baseline_check_circle_outline_24" />
+
+    <TextView
+        android:id="@+id/NamaUser"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_140sdp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/white"
+        android:text="Nama User"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_below="@+id/NamaUser"
+        android:id="@+id/univ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_140sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="University"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/univ"
+        android:layout_marginLeft="@dimen/_140sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="ACID Number"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp" />
+
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_marginTop="@dimen/_160sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_350sdp"
+        android:background="@drawable/bg_shape"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/notificationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginLeft="@dimen/_24sdp"
+            android:text="You have 3 Notification"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_24sdp"
+            android:text="congratulations , you already invited now"
+            android:textColor="@color/purple_200"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="normal" />
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_24sdp"
+            android:id="@+id/layoutNotification"
+            android:layout_marginHorizontal="@dimen/_24sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_64sdp"
+            android:background="@drawable/bg_shape_menu"
+            android:outlineSpotShadowColor="@color/black"
+            android:padding="16dp" >
+
+            <ImageView
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_10sdp" />
+
+            <TextView
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#000"
+                android:text="pesan baru"
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                />
+            <TextView
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#000"
+                android:text="anda mendapatkan pesan baru "
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/title"
+                />
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_below="@+id/body"
+        android:background="@drawable/bg_shape_menu"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/ic_outline_home_24" />
+
+        <ImageButton
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/ic_outline_calendar_today_24" />
+
+        <ImageButton
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/ic_outline_chat_24" />
+
+        <ImageButton
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/ic_baseline_settings_24" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

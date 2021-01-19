@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EClass">
+<<<<<<< HEAD
         <activity android:name=".SuccessActivity"></activity>
+=======
+        <activity android:name=".ChatActivity"></activity>
+        <activity android:name=".HomePageActivity" />
+        <activity android:name=".SuccessActivity" />
+>>>>>>> 3b33711c9f0323573edb162fded57a76f3959497
         <activity android:name=".RegisterMahasiswaActivity2" />
         <activity android:name=".RegisterMahasiswaActivity" />
         <activity android:name=".LoginMahasiswaActivity" />

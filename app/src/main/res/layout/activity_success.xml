@@ -20,7 +20,11 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_250sdp"
         android:layout_centerInParent="true"
-        android:background="@drawable/bg_shape"
+
+
+
+        android:background="@drawable/bg_shape_notification"
+
         android:orientation="vertical">
 
         <LinearLayout
